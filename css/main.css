@@ -1,0 +1,59 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: Verdana;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  background-image: linear-gradient(to top, rgba(28, 14, 0, 0), rgba(28, 14, 0, .5) 50%);
+  font-family: Georgia;
+  color: #fff;
+}
+
+.padding {
+  margin-top: 15em;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+figcaption {
+  font-family: Georgia;
+  font-style: italic;
+}
+
+.title {
+  display: none;
+}
+
+@media only screen and (min-width: 60em) {
+
+  body {
+    background-image: url("/css/..images/sloth.svg");
+    background-size: 48px auto;
+    border: 3px solid #bea586;
+  }
+}
